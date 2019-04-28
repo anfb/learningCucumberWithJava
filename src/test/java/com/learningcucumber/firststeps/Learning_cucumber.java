@@ -1,6 +1,5 @@
 package com.learningcucumber.firststeps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -8,19 +7,18 @@ import cucumber.api.java.pt.Quando;
 public class Learning_cucumber {
 
 	@Dado("^Criei o arquivo corretamente$")
-	public void criei_o_arquivo_corretamente() throws Throwable {
-	    System.out.println("Step passed example!");
+	public void crieiOArquivoCorretamente() throws Throwable {
+	    System.out.println("Passed");
 	}
 
 	@Quando("^Executar$")
 	public void executar() throws Throwable {
-		 throw new PendingException("Step failed example!");
+	    System.out.println("Passed");
 	}
 
 	@Entao("^A especificacao deve executar com sucesso$")
-	public void a_especificacao_deve_executar_com_sucesso() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException("Step skipped example!");
+	public void aEspecificacaoDeveExecutarComSucesso() throws Throwable {
+		System.out.println("Passed");
 	}
 
 }
