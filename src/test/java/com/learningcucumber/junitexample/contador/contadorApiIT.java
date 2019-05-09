@@ -1,4 +1,4 @@
-package com.learningcucumber.junitexample;
+package com.learningcucumber.junitexample.contador;
 
 import org.junit.runner.RunWith;
 
